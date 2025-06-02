@@ -2,6 +2,10 @@ h1{
     font-weight: 700 !important;
 }
 
+p{
+    font-size: 20px;
+}
+
 .light {
   font-weight: 300;
 }
@@ -31,7 +35,8 @@ body{
     color: #fff !important;
 }
 
-nav{
+
+.warning-top{
     border-radius: 20px 20px 0px 0px;
     background: linear-gradient(
         to bottom,
@@ -39,7 +44,7 @@ nav{
         rgba(50, 168, 115, 0.62) 50%,
         rgba(31, 105, 72, 0) 100%
     );
-
+    width: 96%;
 }
 
 #particles-js {
@@ -53,10 +58,6 @@ nav{
 
 .logo{
     width: 13rem;
-}
-
-.logo-mobile{
-    width: 3rem;
 }
 
 .progress{
@@ -82,11 +83,25 @@ nav{
 
 }
 
+.mac-iphone-img{
+    width: 25rem;
+}
+
 @keyframes fillProgressJS {
     from {
         width: 0;
     }
     to {
         width: var(--target-width);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .logo{
+        width: 6rem;
+    }
+
+    .mac-iphone-img{
+        width: 11rem;
     }
 }
