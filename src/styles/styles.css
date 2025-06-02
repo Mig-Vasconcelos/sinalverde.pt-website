@@ -1,10 +1,5 @@
 h1{
     font-weight: 700 !important;
-    font-size: 48px !important;
-}
-
-h2{
-    font-size: 36px !important;;
 }
 
 .light {
@@ -23,7 +18,10 @@ h2{
     color: #3ECF8E !important;
 }
 
-
+html{
+    width: 100%;
+    height: 100vh;
+}
 
 body{
     font-family: 'Montserrat', sans-serif !important;
@@ -50,8 +48,45 @@ nav{
       height: 100%;
       z-index: 0;
       left: 0;
+      top: 0
     }
 
 .logo{
-    width: 15rem;
+    width: 13rem;
+}
+
+.logo-mobile{
+    width: 3rem;
+}
+
+.progress{
+    background-color: transparent !important;
+    border-radius: 20px !important;
+    border: #3ECF8E 3px solid !important;
+    height: 3rem !important;
+}
+
+.progress-bar{
+    height: 2.7rem;
+    border-radius: 15px;
+    background-color: #3ECF8E !important;
+    box-shadow: 10px 0px 17.4px rgba(62, 207, 142, 0.5);
+}
+
+.progress-bar.animate-progress {
+    animation: fillProgressJS 2s ease-out forwards;
+}
+
+.progress i{
+    font-size: 1.5rem;
+
+}
+
+@keyframes fillProgressJS {
+    from {
+        width: 0;
+    }
+    to {
+        width: var(--target-width);
+    }
 }
