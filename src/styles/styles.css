@@ -7,15 +7,15 @@ p{
 }
 
 .light {
-  font-weight: 300;
+  font-weight: 300 !important;
 }
 
 .regular {
-  font-weight: 400;
+  font-weight: 400 !important;
 }
 
 .bold {
-  font-weight: 700;
+  font-weight: 700 !important;
 }
 
 .text-green{
@@ -83,8 +83,22 @@ body{
 
 }
 
+.mac-iphone-text{
+    width: 50% !important;
+}
+
 .mac-iphone-img{
     width: 25rem;
+}
+
+.functionality-text{
+    width: 55% !important;
+}
+
+.functionality-text img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 @keyframes fillProgressJS {
@@ -96,12 +110,79 @@ body{
     }
 }
 
+.nav.nav-pills .nav-link.green{
+    border-radius: 30px;
+    border:#3ECF8E 3px solid;
+    color: #3ECF8E;
+    transition: all 0.3s;
+}
+
+.nav.nav-pills .nav-link.white{
+    border-radius: 30px;
+    border:#fff 3px solid;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.nav.nav-pills .nav-link.green.active{
+    border-radius: 30px;
+    background-color:#3ECF8E;
+    color: #fff;
+}
+
+.nav.nav-pills .nav-link.white.active{
+    border-radius: 30px;
+    background-color:#fff;
+    color: #3ECF8E;
+}
+
+
+.nav.nav-pills .nav-link.green:hover{
+    background-color: #3ECF8E;
+    color: #fff;
+}
+
+.nav.nav-pills .nav-link.white:hover{
+    background-color: #fff;
+    color: #3ECF8E;
+}
+
+/* mobile */
 @media screen and (max-width: 767px) {
     .logo{
         width: 6rem;
     }
 
-    .mac-iphone-img{
-        width: 11rem;
+    .mac-iphone-text{
+        width: 100% !important;
     }
+
+    .mac-iphone-img{
+        width: 15rem;
+    }
+
+    .functionality-text{
+        width: 90% !important;
+    }
+}
+
+@media screen and (max-width: 665px) {
+    .nav.nav-pills .nav-link{
+        border-radius: 30px !important;
+        border:#3ECF8E 3px solid !important;
+        color: #3ECF8E !important;
+        transition: all 0.3s !important;
+    }
+
+    .nav.nav-pills .nav-link.active{
+        border-radius: 30px !important;
+        background-color:#3ECF8E !important;
+        color: #fff !important;
+    }
+
+    .nav.nav-pills .nav-link:hover{
+        background-color: #3ECF8E !important;
+        color: #fff !important;
+    }
+
 }

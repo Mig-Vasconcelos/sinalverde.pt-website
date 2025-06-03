@@ -69,9 +69,9 @@
             </div>
         </div>
     </section>
-    <section class="container d-flex">
+    <section class="container d-flex my-2">
         <div class="d-flex justify-content-between align-items-center my-3 flex-column-reverse flex-md-row">
-            <div class="d-flex flex-column text-center text-md-start w-50">
+            <div class="d-flex flex-column text-center text-md-start mac-iphone-text">
                 <h1 class="py-3 mb-0">A solução ideal para<span class="text-green"> a tua escola</span></h1>
                 <p>Farto de papéis, dosiers, filas intermináveis na secretária, faturas manuais e aulas marcadas em cadernos?</p>
                 <p>Aqui nós livramos-te disso! Da-mos as formas mais práticas e simples para gerires tudo da tua escola de condução, apenas num único sítio.</p> 
@@ -81,7 +81,29 @@
             </div>
         </div>
     </section>
+    <section class="my-2 d-flex flex-column justify-content-center align-items-center">
+        <div class="functionality-text d-flex flex-column justify-content-center align-items-center">
+            <h1 class="p-md-3 text-center">Funcionalidades para todos <span class="text-green">os cantos da tua escola</span></h1>
+            <img src="/src/images/rows.png" alt="">
+        </div>
 
+        <nav class="nav nav-pills nav-justified my-5 my-md-3 w-100 px-3 gap-3" id="myTab" role="tablist">
+            <a class="nav-link green active" id="financeiro-tab" data-bs-toggle="tab" data-bs-target="#financeiro-tab-pane" type="button" role="tab" aria-controls="financeiro-tab-pane" aria-selected="true">Financeiro</a>
+            <a class="nav-link white" id="aulas-tab" data-bs-toggle="tab" data-bs-target="#aulas-tab-pane" type="button" role="tab" aria-controls="aulas-tab-pane" aria-selected="false">Aulas</a>
+            <a class="nav-link green" id="alunos-tab" data-bs-toggle="tab" data-bs-target="#alunos-tab-pane" type="button" role="tab" aria-controls="alunos-tab-pane" aria-selected="false">Alunos</a>
+            <a class="nav-link white" id="veiculos-tab" data-bs-toggle="tab" data-bs-target="#veiculos-tab-pane" type="button" role="tab" aria-controls="veiculos-tab-pane" aria-selected="false">Veículos</a>
+            <a class="nav-link green" id="notificacoes-tab" data-bs-toggle="tab" data-bs-target="#notificacoes-tab-pane" type="button" role="tab" aria-controls="notificacoes-tab-pane" aria-selected="false">Notificações</a>
+        </nav>
+
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="financeiro-tab-pane" role="tabpanel" aria-labelledby="financeiro-tab" tabindex="0">Financeiro</div>
+            <div class="tab-pane fade" id="aulas-tab-pane" role="tabpanel" aria-labelledby="aulas-tab" tabindex="0">Aulas</div>
+            <div class="tab-pane fade" id="alunos-tab-pane" role="tabpanel" aria-labelledby="alunos-tab" tabindex="0">Alunos</div>
+            <div class="tab-pane fade" id="veiculos-tab-pane" role="tabpanel" aria-labelledby="veiculos-tab" tabindex="0">Veículos</div>
+            <div class="tab-pane fade" id="notificacoes-tab-pane" role="tabpanel" aria-labelledby="notificacoes-tab" tabindex="0">Notificações</div>
+        </div>
+
+    </section>
     <script src="/src/js/particle.js/particles.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/a5bf969c7d.js" crossorigin="anonymous"></script>
