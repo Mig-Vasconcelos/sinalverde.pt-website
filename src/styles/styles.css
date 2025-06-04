@@ -1,33 +1,33 @@
-h1{
+h1 {
     font-weight: 700 !important;
 }
 
-p{
+p {
     font-size: 20px;
 }
 
 .light {
-  font-weight: 300 !important;
+    font-weight: 300 !important;
 }
 
 .regular {
-  font-weight: 400 !important;
+    font-weight: 400 !important;
 }
 
 .bold {
-  font-weight: 700 !important;
+    font-weight: 700 !important;
 }
 
-.text-green{
+.text-green {
     color: #3ECF8E !important;
 }
 
-html{
+html {
     width: 100%;
     height: 100vh;
 }
 
-body{
+body {
     font-family: 'Montserrat', sans-serif !important;
     background-color: #161717 !important;
     height: 100vh;
@@ -36,38 +36,36 @@ body{
 }
 
 
-.warning-top{
+.warning-top {
     border-radius: 20px 20px 0px 0px;
-    background: linear-gradient(
-        to bottom,
-        rgba(62, 207, 142, 1) 0%,
-        rgba(50, 168, 115, 0.62) 50%,
-        rgba(31, 105, 72, 0) 100%
-    );
+    background: linear-gradient(to bottom,
+            rgba(62, 207, 142, 1) 0%,
+            rgba(50, 168, 115, 0.62) 50%,
+            rgba(31, 105, 72, 0) 100%);
     width: 96%;
 }
 
 #particles-js {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      z-index: 0;
-      left: 0;
-      top: 0
-    }
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    left: 0;
+    top: 0
+}
 
-.logo{
+.logo {
     width: 13rem;
 }
 
-.progress{
+.progress {
     background-color: transparent !important;
     border-radius: 20px !important;
     border: #3ECF8E 3px solid !important;
     height: 3rem !important;
 }
 
-.progress-bar{
+.progress-bar {
     height: 2.7rem;
     border-radius: 15px;
     background-color: #3ECF8E !important;
@@ -78,20 +76,20 @@ body{
     animation: fillProgressJS 2s ease-out forwards;
 }
 
-.progress i{
+.progress i {
     font-size: 1.5rem;
 
 }
 
-.mac-iphone-text{
+.mac-iphone-text {
     width: 50% !important;
 }
 
-.mac-iphone-img{
+.mac-iphone-img {
     width: 25rem;
 }
 
-.functionality-text{
+.functionality-text {
     width: 55% !important;
 }
 
@@ -105,82 +103,226 @@ body{
     from {
         width: 0;
     }
+
     to {
         width: var(--target-width);
     }
 }
 
-.nav.nav-pills .nav-link.green{
+.nav.nav-pills .nav-link.green {
     border-radius: 30px;
-    border:#3ECF8E 3px solid;
+    border: #3ECF8E 3px solid;
     color: #3ECF8E;
     transition: all 0.3s;
 }
 
-.nav.nav-pills .nav-link.white{
+.nav.nav-pills .nav-link.white {
     border-radius: 30px;
-    border:#fff 3px solid;
+    border: #fff 3px solid;
     color: #fff;
     transition: all 0.3s;
 }
 
-.nav.nav-pills .nav-link.green.active{
+.nav.nav-pills .nav-link.green.active {
     border-radius: 30px;
-    background-color:#3ECF8E;
-    color: #fff;
-}
-
-.nav.nav-pills .nav-link.white.active{
-    border-radius: 30px;
-    background-color:#fff;
-    color: #3ECF8E;
-}
-
-
-.nav.nav-pills .nav-link.green:hover{
     background-color: #3ECF8E;
     color: #fff;
 }
 
-.nav.nav-pills .nav-link.white:hover{
+.nav.nav-pills .nav-link.white.active {
+    border-radius: 30px;
     background-color: #fff;
     color: #3ECF8E;
 }
 
+
+.nav.nav-pills .nav-link.green:hover {
+    background-color: #3ECF8E;
+    color: #fff;
+}
+
+.nav.nav-pills .nav-link.white:hover {
+    background-color: #fff;
+    color: #3ECF8E;
+}
+
+.text-functionality {
+    width: 50% !important;
+}
+
+.image-functionality-financeiro {
+    max-width: 100%;
+    height: auto;
+}
+
+.who-we-are-text {
+    min-width: 12rem;
+}
+
+.box-green {
+    height: 10rem;
+    width: 13rem;
+    border-radius: 30px;
+    border: #3ECF8E 3px solid;
+    background-color: transparent;
+    box-shadow: 6px 6px 9.6px 0px #3ECF8E;
+}
+
+.box-green i {
+    font-size: 3rem;
+    color: #3ECF8E;
+}
+
+.box-green span {
+    color: #fff;
+}
+
+.box-white {
+    height: 10rem;
+    width: 13rem;
+    border-radius: 30px;
+    border: #fff 3px solid;
+    background-color: transparent;
+    box-shadow: 6px 6px 9.6px 0px #fff;
+}
+
+.box-white i {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.box-white span {
+    color: #3ECF8E;
+}
+
+.form-control {
+    background-color: transparent !important;
+    color: #fff !important;
+    border: 1px solid #00ff99 !important;
+    border-radius: 30px !important;
+    box-shadow: none !important;
+}
+
+.form-control::placeholder {
+    color: #ccc !important;
+}
+
+.input-icon {
+    position: absolute !important;
+    left: 15px !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    color: #00ff99 !important;
+}
+
+.input-icon-text-area {
+    position: absolute !important;
+    left: 15px !important;
+    top: 15% !important;
+    transform: translateY(-50%) !important;
+    color: #00ff99 !important;
+}
+
+.input-wrapper {
+    position: relative !important;
+}
+
+.input-wrapper .form-control {
+    padding-left: 40px !important;
+}
+
+textarea.form-control {
+    border-radius: 2rem !important;
+    resize: none !important;
+    height: 200px !important;
+}
+
+.btn-app {
+    border-radius: 30px !important;
+    background: transparent !important;
+    border: #3ECF8E 1px solid !important;
+    color: #fff !important;
+    transition: all 0.3s !important;
+}
+
+.btn-app:hover {
+    background: #3ECF8E !important;
+    color: #fff !important;
+}
+
+footer {
+    border-radius: 0px 0px 30px 30px;
+    background: linear-gradient(to top,
+            rgba(62, 207, 142, 1) 0%,
+            rgba(50, 168, 115, 0.62) 50%,
+            rgba(31, 105, 72, 0) 100%);
+
+}
+
+footer a{
+    text-decoration: none !important;
+    color: #fff !important;
+    outline: none !important;
+}
+
+footer a:hover {
+    color: #3ECF8E !important;
+    text-decoration: underline !important;
+}
+
+.copyright-text{
+    font-size: 0.5rem;
+}
 /* mobile */
 @media screen and (max-width: 767px) {
-    .logo{
+    .logo {
         width: 6rem;
     }
 
-    .mac-iphone-text{
+    .mac-iphone-text {
         width: 100% !important;
     }
 
-    .mac-iphone-img{
+    .mac-iphone-img {
         width: 15rem;
     }
 
-    .functionality-text{
+    .functionality-text {
         width: 90% !important;
+    }
+
+    .text-functionality {
+        width: 100% !important;
+    }
+
+    .image-functionality {
+        width: 100% !important;
+    }
+
+    .image-functionality-financeiro {
+        width: 18rem !important;
+    }
+
+    .divider {
+        width: 20rem !important;
     }
 }
 
 @media screen and (max-width: 665px) {
-    .nav.nav-pills .nav-link{
+    .nav.nav-pills .nav-link {
         border-radius: 30px !important;
-        border:#3ECF8E 3px solid !important;
+        border: #3ECF8E 3px solid !important;
         color: #3ECF8E !important;
         transition: all 0.3s !important;
     }
 
-    .nav.nav-pills .nav-link.active{
+    .nav.nav-pills .nav-link.active {
         border-radius: 30px !important;
-        background-color:#3ECF8E !important;
+        background-color: #3ECF8E !important;
         color: #fff !important;
     }
 
-    .nav.nav-pills .nav-link:hover{
+    .nav.nav-pills .nav-link:hover {
         background-color: #3ECF8E !important;
         color: #fff !important;
     }

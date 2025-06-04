@@ -69,7 +69,7 @@
             </div>
         </div>
     </section>
-    <section class="container d-flex my-2">
+    <section class="container d-flex justify-content-center align-items-center my-2">
         <div class="d-flex justify-content-between align-items-center my-3 flex-column-reverse flex-md-row">
             <div class="d-flex flex-column text-center text-md-start mac-iphone-text">
                 <h1 class="py-3 mb-0">A solução ideal para<span class="text-green"> a tua escola</span></h1>
@@ -81,13 +81,13 @@
             </div>
         </div>
     </section>
-    <section class="my-2 d-flex flex-column justify-content-center align-items-center">
-        <div class="functionality-text d-flex flex-column justify-content-center align-items-center">
+    <section class="container my-2 d-flex flex-column justify-content-center align-items-center">
+        <div class="functionality-text d-flex flex-column justify-content-center align-items-center mb-3 mb-md-5">
             <h1 class="p-md-3 text-center">Funcionalidades para todos <span class="text-green">os cantos da tua escola</span></h1>
             <img src="/src/images/rows.png" alt="">
         </div>
 
-        <nav class="nav nav-pills nav-justified my-5 my-md-3 w-100 px-3 gap-3" id="myTab" role="tablist">
+        <nav class="nav nav-pills nav-justified my-3 my-md-5 w-100 px-3 gap-3" id="myTab" role="tablist">
             <a class="nav-link green active" id="financeiro-tab" data-bs-toggle="tab" data-bs-target="#financeiro-tab-pane" type="button" role="tab" aria-controls="financeiro-tab-pane" aria-selected="true">Financeiro</a>
             <a class="nav-link white" id="aulas-tab" data-bs-toggle="tab" data-bs-target="#aulas-tab-pane" type="button" role="tab" aria-controls="aulas-tab-pane" aria-selected="false">Aulas</a>
             <a class="nav-link green" id="alunos-tab" data-bs-toggle="tab" data-bs-target="#alunos-tab-pane" type="button" role="tab" aria-controls="alunos-tab-pane" aria-selected="false">Alunos</a>
@@ -95,15 +95,140 @@
             <a class="nav-link green" id="notificacoes-tab" data-bs-toggle="tab" data-bs-target="#notificacoes-tab-pane" type="button" role="tab" aria-controls="notificacoes-tab-pane" aria-selected="false">Notificações</a>
         </nav>
 
-        <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="financeiro-tab-pane" role="tabpanel" aria-labelledby="financeiro-tab" tabindex="0">Financeiro</div>
-            <div class="tab-pane fade" id="aulas-tab-pane" role="tabpanel" aria-labelledby="aulas-tab" tabindex="0">Aulas</div>
-            <div class="tab-pane fade" id="alunos-tab-pane" role="tabpanel" aria-labelledby="alunos-tab" tabindex="0">Alunos</div>
-            <div class="tab-pane fade" id="veiculos-tab-pane" role="tabpanel" aria-labelledby="veiculos-tab" tabindex="0">Veículos</div>
-            <div class="tab-pane fade" id="notificacoes-tab-pane" role="tabpanel" aria-labelledby="notificacoes-tab" tabindex="0">Notificações</div>
+        <div class="tab-content my-3 my-lg-5" id="myTabContent">
+            <div class="tab-pane fade active show" id="financeiro-tab-pane" role="tabpanel" aria-labelledby="financeiro-tab" tabindex="0">
+                <div class="d-flex justify-content-center align-items-center flex-column-reverse flex-lg-row w-100">
+                    
+                    <div class="text-functionality text-center text-md-start w-100 w-md-50">
+                        <h2 class="bold"><span class="text-green">O melhor de</span> dois mundos</h2>
+                        <p class="mb-5">Posso pagar com multibanco? Tem MbWay? Passa fatura?</p>
+                        <h2 class="bold">Agora sim! <span class="text-green">Mas como?</span></h2>
+                        <p>
+                            O teu software tem ligação com a <b class="text-green">Moloni</b> para emitir faturas num abrir e fechar de olhos de forma automática, sem necessidade de mexer um dedo!
+                        </p>
+                        <p>
+                            Não te preocupes com os metódos de pagamento, na <b class="text-green">Unicre</b> tens todos os métodos que podes imaginar! MbWay, Cartão, Multibanco e até PayPal!
+                        </p>
+                    </div>
+
+                    <div class="image-functionality d-flex justify-content-center justify-content-lg-end align-items-center w-100 w-md-50 mb-4 mb-md-0">
+                        <img class="image-functionality-financeiro img-fluid" src="/src/images/tab_financeiro.png" alt="moloni e unicre">
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="tab-pane fade" id="aulas-tab-pane" role="tabpanel" aria-labelledby="aulas-tab" tabindex="0">
+                <div class="d-flex justify-content-center align-items-center flex-column-reverse flex-md-row"></div>
+                Aulas
+            </div>
+            <div class="tab-pane fade" id="alunos-tab-pane" role="tabpanel" aria-labelledby="alunos-tab" tabindex="0">
+                <div class="d-flex justify-content-center align-items-center flex-column-reverse flex-md-row">
+                    Alunos
+                </div>
+                
+            </div>
+            <div class="tab-pane fade" id="veiculos-tab-pane" role="tabpanel" aria-labelledby="veiculos-tab" tabindex="0">
+                <div class="d-flex justify-content-center align-items-center flex-column-reverse flex-md-row">
+                    Veículos
+                </div>
+            </div>
+            <div class="tab-pane fade" id="notificacoes-tab-pane" role="tabpanel" aria-labelledby="notificacoes-tab" tabindex="0">
+                <div class="d-flex justify-content-center align-items-center flex-column-reverse flex-md-row">
+                    Notificações
+                </div>
+            </div>
         </div>
 
     </section>
+    <section class="container my-2 text-center text-md-start ">
+        <div class="d-flex flex-column flex-md-row justify-content-center align-items-center mb-5">
+            <div class="d-flex">
+                <img src="/src/images/who_we_are_left.png" alt="???">
+                <img class="d-block d-md-none" src="/src/images/who_we_are_right.png" alt="???">
+            </div>
+            <h1 class="who-we-are-text">Mas afinal <span class="text-green">quem somos</span></h1>
+            <img class="d-none d-md-block" src="/src/images/who_we_are_right.png" alt="???">
+        </div>
+        <h2 class="bold mb-3">Nós somos <span class="text-green">estudantes!</span></h2>
+        <p class="mb-5">
+            O projeto nasceu da experiência de dois estudantes, que ao tirarem a carta de condução, perceberam a falta de atualização dos sistemas utilizados pelas escolas. Diante destes desafios, decidimos transformar esta necessidade numa oportunidade, desenvolvendo como um projeto universitário para modernizar e simplificar a gestão das escolas de condução.
+        </p>
+        <h2 class="bold mb-3"><span class="text-green">Quais os</span> nosso objetivos?</h2>
+        <p>
+            Temos como objetivo ajudar as escolas de condução a otimizar a gestão dos seus recursos e serviços, incluindo a marcação de aulas, a administração de alunos, pagamentos e muito mais. Com uma plataforma intuitiva e inovadora, permite às escolas automatizar processos, reduzir burocracias e melhorar a experiência tanto para alunos quanto para instrutores.
+        </p>
+    </section>
+    <img src="/src/images/divider.png" alt="divider" class="divider my-5 d-flex mx-auto">
+
+    <section class="container my-2">
+        <h1 class="mb-5 text-center text-md-start">O nosso <span class="text-green">foco</span></h1>
+        <div class="justify-content-center align-items-center d-flex flex-column flex-md-row mb-5 gap-5">
+            <div class="d-flex flex-column justify-content-center align-items-center text-center box-green">
+                <i class="fa-regular fa-lightbulb"></i>
+                <span class="mt-2">Inovação</span>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center text-center box-white">
+                <i class="fa-solid fa-bolt"></i>
+                <span class="mt-2">Eficiência</span>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center text-center box-green">
+                <i class="fa-solid fa-wrench"></i>
+                <span class="mt-2">Modernização</span>
+            </div>
+        </div>
+    </section>
+    <section class="container my-2">
+        <h1 class="mb-5 text-center"><span class="text-green">Fale </span>connosco!<i class="fa-solid fa-phone text-green ms-3"></i></h1>
+        <div class="d-flex justify-content-center align-items-center">
+            <form action="" method="post">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <div class="input-wrapper">
+                            <i class="fas fa-user input-icon"></i>
+                            <input type="text" class="form-control py-3" name="nome" placeholder="Nome" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                         <div class="input-wrapper">
+                            <i class="fas fa-envelope input-icon"></i>
+                            <input type="email" class="form-control py-3" name="email" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="input-wrapper">
+                            <i class="fas fa-comment-dots input-icon-text-area"></i>
+                            <textarea class="form-control ps-5 pt-3" name="mensagem" placeholder="Mensagem" required></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-end align-items-center">
+                    <button type="submit" class="btn-app py-2 px-4 mt-3 bold">Enviar</button>
+                </div>
+            </form>
+            
+        </div>
+    </section>
+    <footer class="mt-5 p-4 pb-3">
+        <div class="container d-flex flex-column flex-md-row justify-content-center align-items-center gap-5 mt-3 mb-5">
+            <div class="text-center gap-2 d-flex flex-column">
+                <span class="bold">Recursos</span>
+                <a href="#">Perguntas Frequentes</a>
+                <a href="#">Demonstração</a>
+            </div>
+            <div class="text-center gap-2 d-flex flex-column">
+                <span class="bold">Sobre o Sinalverde.pt</span>
+                <a href="#">Quem somos?</a>
+                <a href="#">Contate-nos</a>
+            </div>
+            <div class="text-center gap-2 d-flex flex-column">
+                <span class="bold">Informações legais</span>
+                <a href="#">Politica de privacidade</a>
+                <a href="#">Preferências de cookies</a>
+            </div>
+        </div>
+        <span class="text-center text-md-start ms-0 ms-md-3 copyright-text">Copyright © 2025 NexWay inc.</span>
+    </footer>
+    <div class="p-2"></div>
     <script src="/src/js/particle.js/particles.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/a5bf969c7d.js" crossorigin="anonymous"></script>
