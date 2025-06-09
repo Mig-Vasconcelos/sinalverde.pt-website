@@ -315,7 +315,7 @@
         const formData = new FormData(form);
 
         // Buscar o token do widget do Turnstile
-        const turnstileResponse = document.querySelector('textarea[name="cf-turnstile-response"]')?.value;
+        const turnstileResponse = document.querySelector('input[name="cf-turnstile-response"]')?.value;
 
         if (!turnstileResponse) {
             alert("Erro: Falha ao obter o token do Turnstile.");
