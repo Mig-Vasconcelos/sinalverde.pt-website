@@ -10,6 +10,8 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="src/images/favicon.ico" type="image/x-icon">
+
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </head>
 <body class="p-3 position-relative">
     <section class="container d-flex flex-column justify-content-center h-100">
@@ -97,7 +99,7 @@
 
         <div class="tab-content my-3 my-lg-5" id="myTabContent">
             <div class="tab-pane fade active show" id="financeiro-tab-pane" role="tabpanel" aria-labelledby="financeiro-tab" tabindex="0">
-                <div class="d-flex justify-content-center align-items-center flex-column-reverse flex-lg-row w-100">
+                <div class="d-flex justify-content-center align-items-center flex-column-reverse flex-lg-row w-100 gap-3">
                     <div class="text-functionality text-center text-md-start w-100 w-md-50">
                         <h2 class="bold"><span class="text-green">O melhor de</span> dois mundos</h2>
                         <p class="mb-5">Posso pagar com multibanco? Tem MbWay? Passa fatura?</p>
@@ -115,7 +117,7 @@
                 </div>
             </div>
             <div class="tab-pane fade" id="aulas-tab-pane" role="tabpanel" aria-labelledby="aulas-tab" tabindex="0">
-                <div class="d-flex justify-content-center align-items-center flex-column-reverse flex-md-row w-100">
+                <div class="d-flex justify-content-center align-items-center flex-column-reverse flex-md-row w-100 gap-3">
                     <div class="text-functionality text-center text-md-start w-100 w-md-50">
                         <h2 class="bold"><span class="text-green">Aqui o sinal está sempre verde</span> para não haver transito!</h2>
                         <p class="mb-5">Farto de filas enormes na secretaria para marcar aulas? Presenças mal marcadas? E aulas online?</p>
@@ -131,39 +133,65 @@
                         </p>
                     </div>
                     <div class="image-functionality d-flex justify-content-center justify-content-lg-end align-items-center w-100 w-md-50 mb-4 mb-md-0">
-                        <img class="image-functionality-financeiro img-fluid" src="/src/images/tab_aulas.png" alt="moloni e unicre">
+                        <img class="image-functionality-financeiro img-fluid" src="/src/images/tab_aulas.png" alt="classroom with students">
                     </div>
                 </div>
             </div>
             <div class="tab-pane fade" id="alunos-tab-pane" role="tabpanel" aria-labelledby="alunos-tab" tabindex="0">
-                <div class="d-flex justify-content-center align-items-center flex-column-reverse flex-md-row w-100">
+                <div class="d-flex justify-content-center align-items-center flex-column-reverse flex-md-row w-100 gap-3">
                     <div class="text-functionality text-center text-md-start w-100 w-md-50">
-                        <h2 class="bold"><span class="text-green">Aqui o sinal está sempre verde</span> para não haver transito!</h2>
-                        <p class="mb-5">Farto de filas enormes na secretaria para marcar aulas? Presenças mal marcadas? E aulas online?</p>
-                        <h2 class="bold">Nós compreendemos! <span class="text-green">E temos a solução!</span></h2>
+                        <h2 class="bold"><span class="text-green">Aqui não precisas de </span>um polícia de trânsito!</h2>
+                        <p class="mb-5">São muitos... É impossível gerir isto tudo!</p>
+                        <h2 class="bold">Respira! Nós temos a solução <span class="text-green">para esse trânsito!</span></h2>
                         <p>
-                            O software está preparado para poderes aderir as aulas online, é so marcares no calendário e, é gerado um link para a aula.
+                            O teu software dá independência aos teus alunos de se registarem nas aulas que lhes dá mais jeito.
                         </p>
                         <p>
-                            Aqui não há papel, e dificuldade em perceber a ortografia do caderno de presenças.
+                            Acabou as horas a discutir com o aluno sobre o melhor horário possível.
                         </p>
                         <p>
-                            Agora a secretaria vai estar sempre desocupada, as marcações são feitas apenas com um click.
+                            Agora é sempre a abrir!
                         </p>
                     </div>
                     <div class="image-functionality d-flex justify-content-center justify-content-lg-end align-items-center w-100 w-md-50 mb-4 mb-md-0">
-                        <img class="image-functionality-financeiro img-fluid" src="/src/images/tab_financeiro.png" alt="moloni e unicre">
+                        <img class="image-functionality-financeiro img-fluid" src="/src/images/tab_alunos.png" alt="student with mobile phone">
                     </div>
                 </div>
             </div>
             <div class="tab-pane fade" id="veiculos-tab-pane" role="tabpanel" aria-labelledby="veiculos-tab" tabindex="0">
-                <div class="d-flex justify-content-center align-items-center flex-column-reverse flex-md-row">
-                    Veículos
+                <div class="d-flex justify-content-center align-items-center flex-column-reverse flex-md-row w-100 gap-3">
+                    <div class="text-functionality text-center text-md-start w-100 w-md-50">
+                        <h2 class="bold"><span class="text-green">A tua garagem </span>num ecrã!</h2>
+                        <p class="mb-5">Está na hora de ir a revisão? É preciso meter combustível? Qual veículo está na oficina?</p>
+                        <h2 class="bold">Respira! Aqui organizamos <span class="text-green">os teus veículos!</span></h2>
+                        <p>
+                           Agora consegues acompanhar o estado atual, registar avarias, verificar quilometragem, alertas durante as aulas de condução.
+                        </p>
+                        <p>
+                            O teu software vai ajudar a gerir a tua garagem em 5º
+                        </p>
+                    </div>
+                    <div class="image-functionality d-flex justify-content-center justify-content-lg-end align-items-center w-100 w-md-50 mb-4 mb-md-0">
+                        <img class="image-functionality-financeiro img-fluid" src="/src/images/tab_alunos.png" alt="student with mobile phone">
+                    </div>
                 </div>
             </div>
             <div class="tab-pane fade" id="notificacoes-tab-pane" role="tabpanel" aria-labelledby="notificacoes-tab" tabindex="0">
-                <div class="d-flex justify-content-center align-items-center flex-column-reverse flex-md-row">
-                    Notificações
+                <div class="d-flex justify-content-center align-items-center flex-column-reverse flex-md-row w-100 gap-3">
+                    <div class="text-functionality text-center text-md-start w-100 w-md-50">
+                        <h2 class="bold"><span class="text-green">Notificações automáticas </span>sem preocupações</h2>
+                        <p class="mb-5">A Aula foi desmarcada? Mas não avisaram!</p>
+                        <h2 class="bold">Agora não <span class="text-green">há desculpas!</span></h2>
+                        <p>
+                            Já consegues notificar toda a escola com um estalar de dedos, alunos e instrutores sempre a par do que se passa.
+                        </p>
+                        <p>
+                            Agora sim, ninguém se distrai… nem com o peão na passadeira!
+                        </p>
+                    </div>
+                    <div class="image-functionality d-flex justify-content-center justify-content-lg-end align-items-center w-100 w-md-50 mb-4 mb-md-0">
+                        <img class="image-functionality-financeiro img-fluid" src="/src/images/tab_alunos.png" alt="student with mobile phone">
+                    </div>
                 </div>
             </div>
         </div>
@@ -209,12 +237,12 @@
     <section class="container my-2">
         <h1 class="mb-5 text-center"><span class="text-green">Fale </span>connosco!<i class="fa-solid fa-phone text-green ms-3"></i></h1>
         <div class="d-flex justify-content-center align-items-center">
-            <form action="" method="post">
+            <form action="https://api.miguelvasconcelos.com/contact-site" method="post">
                 <div class="row">
                     <div class="col-md-6 mb-3">
                         <div class="input-wrapper">
                             <i class="fas fa-user input-icon"></i>
-                            <input type="text" class="form-control py-3" name="nome" placeholder="Nome" required>
+                            <input type="text" class="form-control py-3" name="name" placeholder="Nome" required>
                         </div>
                     </div>
                     <div class="col-md-6 mb-3">
@@ -226,11 +254,13 @@
                     <div class="col-12">
                         <div class="input-wrapper">
                             <i class="fas fa-comment-dots input-icon-text-area"></i>
-                            <textarea class="form-control ps-5 pt-3" name="mensagem" placeholder="Mensagem" required></textarea>
+                            <textarea class="form-control ps-5 pt-3" name="mensage" placeholder="Mensagem" required></textarea>
                         </div>
                     </div>
                 </div>
-                <div class="d-flex justify-content-end align-items-center">
+                <div class="d-flex justify-content-between align-items-center flex-column flex-md-row">
+                    <div class="cf-turnstile mt-3" data-sitekey="0x4AAAAAABghTZw8Rq5F8A3Y" data-theme="dark"></div>
+
                     <button type="submit" class="btn-app py-2 px-4 mt-3 bold">Enviar</button>
                 </div>
             </form>
