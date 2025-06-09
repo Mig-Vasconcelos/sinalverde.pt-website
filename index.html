@@ -326,7 +326,7 @@
         formData.append("cf-turnstile-response", turnstileResponse);
 
         try {
-            const response = await fetch("http://127.0.0.1:8000/contact-site", {
+            const response = await fetch("https://api.miguelvasconcelos.com/contact-site", {
             method: "POST",
             body: formData,
             });
