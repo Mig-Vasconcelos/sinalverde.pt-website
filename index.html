@@ -237,7 +237,7 @@
     <section class="container my-2">
         <h1 class="mb-5 text-center"><span class="text-green">Fale </span>connosco!<i class="fa-solid fa-phone text-green ms-3"></i></h1>
         <div class="d-flex justify-content-center align-items-center">
-            <form action="https://api.miguelvasconcelos.com/contact-site" method="post" target="_blank">
+            <form action="https://api.miguelvasconcelos.com/contact-site" method="post" id="contactForm">
                 <div class="row">
                     <div class="col-md-6 mb-3">
                         <div class="input-wrapper">
@@ -304,6 +304,44 @@
         bar.style.setProperty('--target-width', value + '%');
         bar.style.width = 0;
         bar.classList.add('animate-progress');
+    </script>
+
+    <!-- contact form -->
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", async function(e) {
+        e.preventDefault();
+
+        const form = e.target;
+        const formData = new FormData(form);
+
+        // Buscar o token do widget do Turnstile
+        const turnstileResponse = document.querySelector('textarea[name="cf-turnstile-response"]')?.value;
+
+        if (!turnstileResponse) {
+            alert("Erro: Falha ao obter o token do Turnstile.");
+            return;
+        }
+
+        // Confirmar que o token vai no payload
+        formData.append("cf-turnstile-response", turnstileResponse);
+
+        try {
+            const response = await fetch("http://127.0.0.1:8000/contact-site", {
+            method: "POST",
+            body: formData,
+            });
+
+            const result = await response.text();
+            console.log("Resposta:", result);
+
+            // Faz o que quiseres com a resposta aqui (ex: mostrar mensagem)
+            alert("Submetido com sucesso!");
+
+        } catch (error) {
+            console.error("Erro na submissão:", error);
+            alert("Erro ao submeter o formulário.");
+        }
+        });
     </script>
 </body>
 </html>
