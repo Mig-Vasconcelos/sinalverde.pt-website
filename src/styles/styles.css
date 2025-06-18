@@ -250,6 +250,14 @@ textarea.form-control {
     color: #fff !important;
 }
 
+.image-functionality-alunos{
+    width: 20rem !important;
+}
+
+.image-functionality-notificacoes{
+    width: 25rem !important;
+}
+
 footer {
     border-radius: 0px 0px 30px 30px;
     background: linear-gradient(to top,
@@ -305,6 +313,14 @@ footer a:hover {
 
     .divider {
         width: 20rem !important;
+    }
+
+    .image-functionality-alunos{
+        width: 10rem !important;
+    }
+
+    .image-functionality-notificacoes{
+        width: 15rem !important;
     }
 }
 
