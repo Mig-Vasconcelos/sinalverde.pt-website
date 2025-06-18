@@ -1,4 +1,4 @@
-particlesJS.load("particles-js", "/src/js/particle.js/ParticlesConfig.json");
+particlesJS.load("particles-js", "/assets/js/particle.js/ParticlesConfig.json");
 
 const bar = document.querySelector('.progress-bar');
 const value = bar.getAttribute('aria-valuenow');
