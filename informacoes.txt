@@ -1,0 +1,32 @@
+Miguel Vasconcelos
+Nuno Pereira
+
+Requisitos:
+
+Página HTML inicial com o nome: index.html - Feito
+Página(s) HTML com título(s) adequado(s) - Feito
+Usar um modelo BootStrap 5 (sugestão) - Feito
+Incluir no rodapé o link para o modelo BootStrap usado ou indicar que o site é original - Feito
+HTML, CSS e JavaScript em ficheiros separados (obrigatório) - Feito
+Nomes de ficheiros e de pastas adequados, em minúsculas, sem acentos, sem espaços e sem caracteres especiais - Feito
+Ficheiros de imagem com um limite máximo de 1MB (cada um) - Feito
+Ficheiros de imagem (e outros multimédia caso se usem) guardados na pasta "assets" - Feito
+Não conter ficheiros não utilizados - Feito
+Validação do código HTML - Feito
+Utilização de uma API ou de um ficheiro JSON - Feito: é utilizado a api do nosso projeto para enviar uma mensage, e o ficheiro json é utilizado pela biblioteca das particulas
+Código HTML, CSS e Javascript mais relevante com comentários - Feito: os comentários não são muito detalhados porque o código foi feito de maneira explicita e simples
+
+Detalhes da nossa api:
+
+A nossa api está a espera de receber um form data com os seguintes dados:
+
+name (string)
+email (string)
+mensage (string)
+cf_turnstile_response (string)
+
+no javascript que existe uma função que é executada ao clicar no botão de submeter o formulário, que serve para converter os dados tudos num formdata e fazer o request
+a api com a utilização do fetch api, que já vem incluido no próprio javascript, foi utilizado dessa forma para quando se clicar no submeter o formulário, não sair da
+página atual.
+
+Mais informações esteja a vontade para contactar!

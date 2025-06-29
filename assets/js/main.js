@@ -11,7 +11,8 @@ bar.classList.add('animate-progress');
 //Submissão do formulário de contacto com validação do captcha da cloudflare, o request é enviado via Fetch API
 const form = document.getElementById('contactForm');
 form.addEventListener('submit', async (e) => {
-    e.preventDefault();
+
+    e.preventDefault(); //Evita o envio do formulário da forma tradicionar, para evitar recarregar a página
     const formData = new FormData(form);
     const turnstileResponse = document.querySelector('input[name="cf-turnstile-response"]')?.value;
     if (!turnstileResponse) {
